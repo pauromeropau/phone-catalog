@@ -1,3 +1,34 @@
+### 📱 ✨ Phone Catalogue ✨ 📱
+
+React/Redux, Hooks, Node, Express, Axios, Docker
+
+#### HOW TO RUN - API & FRONTEND APP
+-
+-
+-
+
+#### DONE
+-
+-
+-
+
+#### TO DO
+- REST API: 1 endpoint, returns 'phones.json'...
+- Front: Fetch data with Redux and Axios (or similar), display initial list with all phones, render phone details when clicked, display spinner while request, responsive design...
+- Repo: Public repo,  add readme that explains how to run... 
+
+#### BONUS
+1. Dockerize the app
+2. Write realistic unit/end-to-end tests
+
+#### Author
+Paula Romero Armas
+👤 [LinkedIn](www.linkedin.com/in/pauromeropau/)
+📩 pauromeropau@gmail.com 
+📍 Madrid, Spain.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
 # Phone Catalogue
 Your task is to write a very simple product catalogue app.
 
