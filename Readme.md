@@ -22,12 +22,13 @@ React/Redux, Hooks, Node, Express, Axios, Docker
 2. Write realistic unit/end-to-end tests
 
 #### Author
-Paula Romero Armas
-👤 [LinkedIn](www.linkedin.com/in/pauromeropau/)
+👩🏼‍💻 Paula Romero Armas 
+👤 [LinkedIn](https://www.linkedin.com/in/pauromeropau/) 
 📩 pauromeropau@gmail.com 
-📍 Madrid, Spain.
+📍 Madrid, Spain. 
 
 --------------------------------------------------------------------------------------------------------------------------------
+*
 
 # Phone Catalogue
 Your task is to write a very simple product catalogue app.
@@ -47,3 +48,5 @@ Your task is to write a very simple product catalogue app.
 ## Bonus points
 1. Dockerize the app.
 2. Write realistic unit/end-to-end tests.
+
+*

@@ -1,13 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { fetchData } from "./actions/fetchData";
+import { connect } from "react-redux";
 
-function App() {
-  return (
-    <div className="App">
-    <h1>Hola</h1>
-    </div>
-  );
+import NavBar from "./components/NavBar/NavBar.js";
+import Routes from "./Routes";
+import Footer from "./components/Footer/Footer.js";
+
+import "./App.css";
+
+class App extends React.Component {
+  componentDidMount() {
+    this.props.dispatch(fetchData());
+  }
+
+  render() {
+  
+    return (
+      <div className="app">
+        <NavBar />
+        <Routes />
+        <Footer />
+      </div>
+    );
+  }
 }
 
-export default App;
+const mapStateToProps = state => ({
+  phones: state.phones,
+  loading: state.loading,
+  error: state.error
+});
+
+export default connect(mapStateToProps)(App);

@@ -1,0 +1,74 @@
+.phoneDetails {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 10px;
+}
+.phoneDetailsName {
+  font-size: 26px;
+}
+
+.phoneDetailsA {
+}
+
+.phoneDetailsNameImg {
+  width: 500px;
+}
+
+.phoneDetailsB {
+  margin: 20px;
+  padding: 20px;
+  text-align: left;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.phoneDetailsName {
+}
+
+.phoneDetailsPrice {
+  font-size: 30px;
+  color: black;
+  margin: 10px 0px;
+}
+
+.phoneDetailsPriceOld {
+  text-decoration: line-through;
+
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.637);
+  margin: 10px 0px;
+}
+
+.phoneDetailsDes {
+}
+
+.phoneDetailsBuy {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #1844c1;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 11px 22px;
+  margin: 15px 0px 15px 0px;
+  font-size: 14px;
+}
+
+.phoneDetailsBuy:hover {
+  background-color: rgba(24, 69, 193, 0.815);
+}
+
+.phoneDetailsBuyIcon {
+  height: 20px;
+  margin: 0px 4px;
+}
+
+button:focus {
+  outline: 0;
+}

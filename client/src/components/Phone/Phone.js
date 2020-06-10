@@ -1,0 +1,47 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+import "./Phone.css";
+import cart from "./icons/cart.svg";
+
+const Phone = ({ phone }) => {
+  console.log(phone);
+  const oldPrice = (phone.price + 199.99).toFixed(2);
+
+  return (
+    <div className="phone">
+      <div className="phoneTitleContainer">
+        <Link to={`/${phone.id}`} className="Link">
+          <p className="phoneTitle">
+            Smartphone - {phone.manufacturer} {phone.name}, {phone.color},{" "}
+            {phone.processor}
+          </p>
+        </Link>
+      </div>
+      <Link to={`/${phone.id}`} className="Link">
+        <img
+          className="phonePic"
+          alt="phone"
+          src={`/images/${phone.imageFileName}`}
+        />
+      </Link>
+      <p className="phonePriceOld">£{oldPrice}</p>
+      <p className="phonePrice">£{phone.price}</p>
+      <div className="phoneButtonsContainer">
+        <Link to={`/${phone.id}`} className="Link">
+          <button className="phoneButtonView">
+            View more
+          </button>
+        </Link>
+        <Link to={`/${phone.id}`} className="Link">
+          <button className="phoneButtonBuy">
+            <img className="phoneButtonBuyIcon" src={cart} alt="Cart icon" />
+            Buy
+          </button>
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+export default Phone;
