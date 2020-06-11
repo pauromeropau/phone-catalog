@@ -1,6 +1,6 @@
 ### 📱 ✨ The smartphone's boutique (Phone Catalogue) ✨ 📱
 
-#### What is it?
+#### WHAT IS IT?
 
 "The smartphone's boutique" is an online and sofisticated technology shop. Sofisticated because they just sell 8 smartphones.
 <br>
@@ -9,7 +9,7 @@ Itself, it's meaningless. I mean, just info. So I had the idea of creating a sma
 
 ### AÑADIR AQUI GIFs
 
-#### Tech Stack
+#### TECH STACK
 
 React/Redux, Hooks, Node, Express, Axios, Docker...
 
@@ -17,7 +17,9 @@ React/Redux, Hooks, Node, Express, Axios, Docker...
 
 As I mentioned before, this website has been given the appearance of an online store. It is easy to use and intuitive. For this, a simple and clean interface has been developed. We do not want customers to run away from our website!
 
-#### DEMO - AÑADIR AQUÍ DEPLOY
+#### DEMO
+
+AÑADIR AQUÍ DEPLOY
 
 #### HOW TO RUN - API & FRONTEND APP
 
@@ -25,7 +27,7 @@ As I mentioned before, this website has been given the appearance of an online s
 docker-compose up
 ```
 
-##### Server sid
+##### Server side
 
 ```
 ./server
@@ -40,7 +42,7 @@ npm start
 npm i
 npm start
 ```
-
+... and go to 
 ```
 http://localhost:3000/
 ```
