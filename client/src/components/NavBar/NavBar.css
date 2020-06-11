@@ -23,7 +23,7 @@
 .navbarLogo{
   cursor: pointer;
   font-size: 14px;
-  color: black;
+  color: #4F4F4F;
   font-weight: bold;
 }
 
@@ -47,7 +47,7 @@
 
 .navbarListOptText{
   font-weight: 300;
-  color:black;
+  color:#4F4F4F;
 }
 
 .navbarListOptText:hover{
