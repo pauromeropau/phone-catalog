@@ -1,29 +1,25 @@
 let initialState = {
   phones: [],
-  loading: false,
-  error: null
+  error: null,
 };
 
 function reducer(state = initialState, action) {
   switch (action.type) {
-    case "FETCH_DATA_REQUEST":
+    case "DATA_REQUEST":
       return {
         ...state,
-        loading: true,
-        error: null
+        error: null,
       };
-    case "FETCH_DATA_SUCCESS":
+    case "DATA_SUCCESS":
       return {
         ...state,
-        loading: false,
-        phones: action.data
+        phones: action.data,
       };
-    case "FETCH_DATA_ERROR":
+    case "DATA_ERROR":
       return {
         ...state,
-        loading: false,
         error: action.payload.error,
-        phones: []
+        phones: [],
       };
     default:
       return state;

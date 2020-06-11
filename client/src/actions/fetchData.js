@@ -1,17 +1,17 @@
-import { fetchDataRequest, fetchDataSuccess, fetchDataError } from "./action";
+import { dataRequest, dataSuccess, dataError } from "./action";
 import axios from "axios";
 
 export function fetchData() {
   return (dispatch) => {
-    dispatch(fetchDataRequest());
+    dispatch(dataRequest());
 
     axios
       .get(`http://localhost:5000/phones`)
       .then((response) => {
-        dispatch(fetchDataSuccess(response.data.data));
+        setTimeout(() => dispatch(dataSuccess(response.data.data)), 35 * 60);
       })
       .catch((error) => {
-        dispatch(fetchDataError(error));
+        dispatch(dataError(error));
       });
   };
 }

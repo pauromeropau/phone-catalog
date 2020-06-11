@@ -2,11 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "./Phone.css";
-import cart from "./icons/cart.svg";
 
 const Phone = ({ phone }) => {
-  console.log(phone);
-  const oldPrice = (phone.price + 199.99).toFixed(2);
+  let oldPrice = (phone.price + 199.99).toFixed(2);
 
   return (
     <div className="phone">
@@ -29,15 +27,10 @@ const Phone = ({ phone }) => {
       <p className="phonePrice">£{phone.price}</p>
       <div className="phoneButtonsContainer">
         <Link to={`/${phone.id}`} className="Link">
-          <button className="phoneButtonView">
-            View more
-          </button>
+          <button className="phoneButtonView">View more</button>
         </Link>
         <Link to={`/${phone.id}`} className="Link">
-          <button className="phoneButtonBuy">
-            <img className="phoneButtonBuyIcon" src={cart} alt="Cart icon" />
-            Buy
-          </button>
+          <button className="phoneButtonBuy">Buy</button>
         </Link>
       </div>
     </div>

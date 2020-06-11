@@ -1,25 +1,21 @@
-import {
-  FETCH_DATA_REQUEST,
-  FETCH_DATA_SUCCESS,
-  FETCH_DATA_ERROR
-} from "./actionType";
+import { DATA_REQUEST, DATA_SUCCESS, DATA_ERROR } from "./actionType";
 
-export function fetchDataRequest() {
+export function dataRequest() {
   return {
-    type: FETCH_DATA_REQUEST
+    type: DATA_REQUEST,
   };
 }
 
-export function fetchDataSuccess(data) {
+export function dataSuccess(data) {
   return {
-    type: FETCH_DATA_SUCCESS,
-    data
+    type: DATA_SUCCESS,
+    data,
   };
 }
 
-export function fetchDataError(error) {
+export function dataError(error) {
   return {
-    type: FETCH_DATA_ERROR,
-    payload: { error }
+    type: DATA_ERROR,
+    payload: { error },
   };
 }

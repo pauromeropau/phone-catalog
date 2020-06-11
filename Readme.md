@@ -1,33 +1,74 @@
 ### 📱 ✨ The smartphone's boutique (Phone Catalogue) ✨ 📱
 
 #### What is it?
+
 "The smartphone's boutique" is an online and sofisticated technology shop. Sofisticated because they just sell 8 smartphones.
-This is part of the idea of creating a website with meaning, or some UX. It's provided a JSON file for doing this test. 
+This is part of the idea of creating a website with meaning, or some UX. It's provided a JSON file for doing this test.
 Itself, it's meaningless, I mean, just info. So I had the idea of creating a small boutique and not simply develope a website that renders a JSON file.
 
+### AÑADIR AQUI GIFs
+
 #### Tech Stack
+
 React/Redux, Hooks, Node, Express, Axios, Docker...
 
 #### UX/UI
+
 As I mentioned before, this website has been given the appearance of an online store. It is easy to use and intuitive. For this, a simple and clean interface has been developed. We do not want customers to run away from our website!
 
+#### DEMO - AÑADIR AQUÍ DEPLOY
+
 #### HOW TO RUN - API & FRONTEND APP
-- 
-- 
-- 
+
+docker-compose up
+
+##### Server side
+
+Go to ./server
+Run npm i
+Run without docker with npm start
+Run tests with npm test
+
+##### Client side
+
+Go to ./client
+Run npm i
+Run without docker with npm start
+
+##### Global
+
+Go to http://localhost:3000/
+
+<!-- ##### Global .env
+
+API_HOST=http://localhost:3000
+APP_SERVER_PORT=5000
+REACT_APP_PORT=3000
+
+##### ./server .env
+
+PORT=5000
+ENV=development -->
 
 #### DONE
-- REST API: 1 endpoint, returns 'phones.json'...
-- Front: Fetch data with Redux and Axios (or similar), display initial list with all phones, render phone details when clicked,responsive design...
+
+- Public repo
+- REST API: 1 endpoint, returns 'phones.json'
+- Fetch data with Redux and Axios (or similar)
+- Display initial list with all phones
+- Render phone details when clicked
+- Responsive design
+- Display spinner while request
 
 #### TO DO
-- Display spinner while request... 
-- Repo: Public repo,  add readme that explains how to run... 
-- Dockerize 
+
+- Add readme that explains how to run
+- Dockerize
 - Write realistic unit/end-to-end tests
 
 #### Author
-👩🏼‍💻 Paula Romero Armas 
-👤 [LinkedIn](https://www.linkedin.com/in/pauromeropau/) 
-📩 pauromeropau@gmail.com 
-📍 Madrid, Spain. 
+
+👩🏼‍💻 Paula Romero Armas
+👤 [LinkedIn](https://www.linkedin.com/in/pauromeropau/)
+📩 pauromeropau@gmail.com
+📍 Madrid, Spain.

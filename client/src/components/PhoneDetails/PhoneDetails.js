@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 import "./PhoneDetails.css";
-import cart from "./icons/cart.svg";
+import cartWhite from "./icons/cartWhite.svg";
+import NYT from "./icons/NYT.png";
 
 const PhoneDetails = () => {
   const { phones } = useSelector((state) => {
@@ -11,25 +13,15 @@ const PhoneDetails = () => {
       phones: state.phones,
     };
   });
-  const params = useParams().phoneId;
+
   const [phone, setPhone] = useState("");
+  const idx = useParams().phoneId;
 
   useEffect(() => {
-    setPhone(phones.filter((el) => (el.id === +params ? el : null))[0]);
-  }, [phone, phones, params]);
+    setPhone(phones.filter((phone) => (phone.id === +idx ? phone : null))[0]);
+  }, [phone, phones, idx]);
 
-  console.log(phone);
-
-  if (!phone)
-    return (
-      <div className="loading">
-        <h1>Loading...</h1>
-      </div>
-    );
-
-  const oldPrice = (phone.price + 199.99).toFixed(2);
-
-  return (
+  return phone ? (
     <div className="phoneDetails">
       <div className="phoneDetailsA">
         <img
@@ -39,23 +31,63 @@ const PhoneDetails = () => {
         />
       </div>
       <div className="phoneDetailsB">
-        <span className="phoneDetailsName">
-          {phone.manufacturer} {phone.name} - {phone.color}
-        </span>
-        <br />
-        <span className="phoneDetailsPriceOld">£${oldPrice}</span>
-        <span className="phoneDetailsPrice">£{phone.price}</span>
-        <br />
-        <span className="phoneDetailsDes"> {phone.description}</span>
-        <ul>
-          <li className="phoneDetailsScreen"> {phone.screen} Screen</li>
-          <li className="phoneDetailsProc"> {phone.processor} Processor</li>
-          <li className="phoneDetailsRAM"> {phone.ram}GB RAM</li>
-        </ul>
-        <button className="phoneDetailsBuy">
-          <img className="phoneDetailsBuyIcon" src={cart} alt="Cart icon" />
-          Add to cart
-        </button>
+        <div className="phoneDetailsNameContainer">
+          <span className="phoneDetailsName">
+            {phone.manufacturer} {phone.name}
+          </span>
+          <br />
+          <div className="phoneDetailsColorContainer">
+            <span>Color</span>
+            <div
+              className="phoneDetailsColor"
+              style={{ backgroundColor: `${phone.color}` }}
+            ></div>
+          </div>
+        </div>
+        <div className="phoneDetailsPriceContainer">
+          <span className="phoneDetailsPrice">£{phone.price}</span>
+        </div>
+        <div className="phoneDetailsDesContainer">
+          <span className="phoneDetailsDes">
+            <i>"{phone.description}"</i>
+          </span>{" "}
+          <br />
+          <img className="phoneDetailsDesAuthor" src={NYT} alt="NYT logo" />
+        </div>
+        <div className="phoneDetailsListContainer">
+          <span> {phone.screen} Screen</span>
+          <br />
+          <span> {phone.processor} Processor</span>
+          <br />
+          <span> {phone.ram}GB RAM</span>
+        </div>
+
+        <div className="phoneDetailsButtonsContainer">
+          <Link to={`/`} className="Link">
+            <button className="phoneButtonNo">Not for me</button>
+          </Link>
+          <Link to={`/`} className="Link">
+            {" "}
+            <button className="phoneDetailsBuy">
+              <img
+                className="phoneDetailsBuyIcon"
+                src={cartWhite}
+                alt="Cart icon"
+              />
+              Add to cart
+            </button>
+          </Link>
+        </div>
+      </div>
+    </div>
+  ) : (
+    <div className="LoadingDetails">
+      <div className="LoadingDetailsTextContainer">
+        <h1 className="LoadingDetailsText">Preparings smartphone details...</h1>
+      </div>
+      <div className="circles">
+        <span className="circle c1"></span>
+        <span className="circle c2"></span>
       </div>
     </div>
   );

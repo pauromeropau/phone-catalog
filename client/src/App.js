@@ -4,7 +4,6 @@ import { connect } from "react-redux";
 
 import NavBar from "./components/NavBar/NavBar.js";
 import Routes from "./Routes";
-import Footer from "./components/Footer/Footer.js";
 
 import "./App.css";
 
@@ -14,12 +13,10 @@ class App extends React.Component {
   }
 
   render() {
-  
     return (
       <div className="app">
         <NavBar />
         <Routes />
-        <Footer />
       </div>
     );
   }
@@ -27,7 +24,6 @@ class App extends React.Component {
 
 const mapStateToProps = state => ({
   phones: state.phones,
-  loading: state.loading,
   error: state.error
 });
 

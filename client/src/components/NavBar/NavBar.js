@@ -1,5 +1,6 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+
+import cartBlack from "./icons/cartBlack.svg";
 
 import "./NavBar.css";
 
@@ -7,9 +8,9 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       <div className="navbarLogoContainer">
-        <h1 className="navbarLogo" href="/">
+        <a className="navbarLogo" href="/">
           The boutique
-        </h1>
+        </a>
       </div>
       <ul className="navbarList">
         <li className="navbarListOpt">
@@ -19,8 +20,11 @@ const NavBar = () => {
         </li>
         <li className="navbarListOpt">
           <a className="navbarListOptText" href="/">
-            Xiaomi
+            Samsung
           </a>
+        </li>
+        <li className="navbarListOpt">
+          <img className="navbarBuyIcon" src={cartBlack} alt="Cart icon" />
         </li>
       </ul>
     </nav>

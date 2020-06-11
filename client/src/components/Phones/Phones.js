@@ -7,21 +7,28 @@ import "./Phones.css";
 
 const Phones = ({ phones }) => {
 
-  if (!phones)
-  return (
-    <div className="loadingPhones">
-      <h1>Loading...</h1>
-    </div>
-  );
-
   return (
     <div className="phones">
-      <h1 className="phonesTitle">The smartphone's boutique</h1>
-      <div className="phonesContainer">
-        {phones.map((phone, i) => (
-          <Phone key={i} phone={phone} />
-        ))}
-      </div>
+      {phones.length === 8 ? (
+        <div>
+          <h1 className="phonesTitle">The smartphone's boutique</h1>
+          <div className="phonesContainer">
+            {phones.map((phone, i) => (
+              <Phone key={i} phone={phone} />
+            ))}
+          </div>
+        </div>
+      ) : (
+        <div className="LoadingWindow">
+          <div className="LoadingWindowTextContainer">
+            <h1 className="LoadingWindowText">We are looking for the best smartphones for you...</h1>
+          </div>
+          <div className="circles">
+            <span className="circle c1"></span>
+            <span className="circle c2"></span>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -1,5 +1,10 @@
+.phoneLoading {
+  width: 300px;
+  height: 500px;
+  background-color: red;
+}
+
 .phone {
-  background-color: white;
   border: 1px solid rgb(179, 179, 179);
   border-radius: 10px;
   margin: 10px 13px 15px 10px;
@@ -17,7 +22,6 @@
 .phoneTitle {
   color: black;
   font-size: 20px;
-  font-weight: bold;
   margin: 20px 5px;
   white-space: nowrap;
   overflow: hidden;
@@ -25,7 +29,7 @@
 }
 
 .phoneTitle:hover {
-  color: #1844c1;
+  color: #5b8afd;
 }
 
 .phonePic {
@@ -66,18 +70,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #1844c1;
-  color: #1844c1;
+  border: 1px solid #000000;
+  color: #000000;
   font-weight: 100;
   border-radius: 3px;
   padding: 8px 12px;
   margin: 15px 0px 15px 0px;
   font-size: 14px;
+  background-color: white;
 }
 
-.phoneButtonViewIcon {
-  height: 12px;
-  margin: 0px 10px;
+.phoneButtonView:hover{
+  border: 1px solid #5b8afd;
+  color: #5b8afd;
 }
 
 .phoneButtonBuy {
@@ -86,7 +91,7 @@
   align-items: center;
   justify-content: center;
   border: none;
-  background-color: #1844c1;
+  background-color: #000000;
   color: white;
   font-weight: bold;
   border-radius: 3px;
@@ -96,7 +101,7 @@
 }
 
 .phoneButtonBuy:hover {
-  background-color: rgba(24, 69, 193, 0.815);
+  background-color: #5b8afd;
 }
 
 .phoneButtonBuyIcon {
@@ -104,6 +109,4 @@
   margin: 0px 4px;
 }
 
-button:focus {
-  outline: 0;
-}
+

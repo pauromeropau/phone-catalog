@@ -7,8 +7,9 @@
   flex-direction: row;
   justify-content: space-between;
   top: 0; 
-  width: 100%;
   z-index: 99;
+  padding-top: 10px;
+  width: 100%;
 }
 
 .navbarLogoContainer {
@@ -16,12 +17,18 @@
   float: left;
   align-items: center;
   margin-left: 20px;
+  text-align: left;
 }
 
 .navbarLogo{
   cursor: pointer;
   font-size: 14px;
   color: black;
+  font-weight: bold;
+}
+
+.navbarLogo:hover {
+  color: #ff635c;
 }
 
 .navbarList{
@@ -39,8 +46,14 @@
 }
 
 .navbarListOptText{
-  text-decoration: none;
   font-weight: 300;
   color:black;
 }
 
+.navbarListOptText:hover{
+  color: #5b8afd;
+}
+
+.navbarBuyIcon{
+  height: 20px;
+}
