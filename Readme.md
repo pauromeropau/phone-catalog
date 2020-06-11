@@ -3,8 +3,9 @@
 #### What is it?
 
 "The smartphone's boutique" is an online and sofisticated technology shop. Sofisticated because they just sell 8 smartphones.
+<br>
 This is part of the idea of creating a website with meaning, or some UX. It's provided a JSON file for doing this test.
-Itself, it's meaningless, I mean, just info. So I had the idea of creating a small boutique and not simply develope a website that renders a JSON file.
+Itself, it's meaningless. I mean, just info. So I had the idea of creating a small boutique and not simply develope a website that renders a JSON file.
 
 ### AÑADIR AQUI GIFs
 
@@ -20,35 +21,44 @@ As I mentioned before, this website has been given the appearance of an online s
 
 #### HOW TO RUN - API & FRONTEND APP
 
+```
 docker-compose up
+```
 
-##### Server side
+##### Server sid
 
-Go to ./server
-Run npm i
-Run without docker with npm start
-Run tests with npm test
+```
+./server
+npm i
+npm start
+```
 
 ##### Client side
 
-Go to ./client
-Run npm i
-Run without docker with npm start
+```
+./client
+npm i
+npm start
+```
 
-##### Global
+```
+http://localhost:3000/
+```
 
-Go to http://localhost:3000/
+##### Global .env
 
-<!-- ##### Global .env
-
+```
 API_HOST=http://localhost:3000
 APP_SERVER_PORT=5000
 REACT_APP_PORT=3000
+```
 
 ##### ./server .env
 
+```
 PORT=5000
-ENV=development -->
+ENV=development
+```
 
 #### DONE
 
