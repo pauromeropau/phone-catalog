@@ -17,10 +17,6 @@ React/Redux, Hooks, Node, Express, Axios, Docker...
 
 As I mentioned before, this website has been given the appearance of an online store. It is easy to use and intuitive. For this, a simple and clean interface has been developed. We do not want customers to run away from our website!
 
-#### DEMO
-
-AÑADIR AQUÍ DEPLOY
-
 #### HOW TO RUN - API & FRONTEND APP
 
 ```
@@ -28,6 +24,8 @@ docker-compose up
 ```
 
 ##### Server side
+
+Run without Docker:
 
 ```
 ./server
@@ -37,14 +35,24 @@ npm start
 
 ##### Client side
 
+Run without Docker:
+
 ```
 ./client
 npm i
 npm start
 ```
-... and go to 
+
+... and go to
+
 ```
 http://localhost:3000/
+```
+
+Run tests:
+
+```
+npm test
 ```
 
 ##### Global .env
