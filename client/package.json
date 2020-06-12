@@ -19,7 +19,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start:dev": "webpack-dev-server"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,6 +38,12 @@
     ]
   },
   "devDependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "jest": "^24.9.0",
+    "jest-enzyme": "^7.1.2",
+    "react-test-renderer": "^16.13.1",
     "typescript": "^3.9.5"
-  }
+  },
+  "proxy": "http://backend:5000"
 }

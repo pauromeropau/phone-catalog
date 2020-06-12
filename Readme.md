@@ -11,13 +11,13 @@ Itself, it's meaningless. I mean, just info. So I had the idea of creating a sma
 
 ### TECH STACK
 
-React/Redux, Hooks, Node, Express, Axios, Docker...
+React/Redux, Hooks, Node, Express, Axios, Docker and Jest 
 
 ### UX/UI
 
 As I mentioned before, this website has been given the appearance of an online store. It is easy to use and intuitive. For this, a simple and clean interface has been developed. We do not want customers to run away from our website!
 
-### HOW TO RUN 
+### HOW TO RUN
 
 ```
 docker-compose up
@@ -28,7 +28,7 @@ docker-compose up
 Run without Docker:
 
 ```
-cd server
+cd server/
 npm i
 npm start
 ```
@@ -38,7 +38,7 @@ npm start
 Run without Docker:
 
 ```
-cd client
+cd client/
 npm i
 npm start
 ```
@@ -58,16 +58,16 @@ npm test
 #### Global .env
 
 ```
-API_HOST=http://localhost:3000
-APP_SERVER_PORT=5000
 REACT_APP_PORT=3000
+APP_SERVER_PORT=5000
+API_HOST=http://localhost:3000
 ```
 
 #### ./server .env
 
 ```
-PORT=5000
 ENV=development
+PORT=5000
 ```
 
 ### DONE

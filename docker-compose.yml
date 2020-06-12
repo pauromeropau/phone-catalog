@@ -1,30 +1,24 @@
-version : '3'
-
+version: "3"
 services:
-
-  server:
-    build: ./server
-    expose: 
-      - ${APP_SERVER_PORT}
-    environment: 
-      API_HOST: ${API_HOST} 
-      API_SERVER_PORT: ${APP_SERVER_PORT}
-    ports:
-      - ${APP_SERVER_PORT}:${APP_SERVER_PORT}
-    volumes: 
-      - ./server/routes:/srv/app/guidesmith/routes
-    command: 
-      npm start
-  client: 
-    build: ./client
-    environment: 
-      - REACT_APP_PORT=${REACT_APP_PORT}
-    expose: 
-      - ${REACT_APP_PORT}
-    ports:
-      - ${REACT_APP_PORT}:${REACT_APP_PORT}
-    volumes: 
-      - ./client/src:/srv/app/guidesmith/src
-      - ./client/public:/srv/app/guidesmith/public
-    command: 
-      npm start
+    client:
+        container_name: client_side
+        build:
+            context: ./client
+            dockerfile: Dockerfile
+        image: pauromeropau/awesome_web
+        ports:
+            - "3000:3000"
+        volumes:
+            - ./client:/usr/src/app
+        stdin_open: true
+    server:
+        container_name: server_side
+        build:
+            context: ./server
+            dockerfile: Dockerfile
+        image: pauromeropau/awesome_server
+        ports:
+            - "5000:5000"
+        volumes:
+            - ./server:/usr/src/app
+        stdin_open: true
