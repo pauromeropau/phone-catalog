@@ -10,13 +10,15 @@ LABEL description="Guidesmiths test"
 WORKDIR /server
 
 # install app dependencies
-COPY package*.json ./
+# COPY package*.json ./
+COPY package.json /srv/app/server
+COPY package-lock.json /srv/app/server
 
 RUN npm install
 
 # add app
 COPY . .
 
-EXPOSE 5000
+# EXPOSE 5000
 
 CMD [ "npm", "start" ]

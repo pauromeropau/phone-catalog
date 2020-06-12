@@ -13,8 +13,10 @@ WORKDIR /client
 ENV PATH /app/node_modules/.bin:$PATH
 
 # install app dependencies
-COPY package.json ./
-COPY package-lock.json ./
+# COPY package.json ./
+# COPY package-lock.json ./
+COPY package.json /srv/app/client
+COPY package-lock.json /srv/app/client
 
 RUN npm install
 
