@@ -2,23 +2,32 @@ version: "3"
 services:
     client:
         container_name: client_side
+        expose:  
+          - ${REACT_APP_PORT}
         build:
-            context: ./client
-            dockerfile: Dockerfile
+          context: ./client
+          dockerfile: Dockerfile
+        environment: 
+          - REACT_APP_PORT=${REACT_APP_PORT}
         image: pauromeropau/awesome_web
         ports:
-            - "3000:3000"
+          - ${REACT_APP_PORT}:${REACT_APP_PORT}
         volumes:
-            - ./client:/usr/src/app
+          - ./client:/usr/src/app
         stdin_open: true
     server:
         container_name: server_side
+        expose: 
+          - ${APP_SERVER_PORT}
         build:
-            context: ./server
-            dockerfile: Dockerfile
+          context: ./server
+          dockerfile: Dockerfile
+        environment: 
+          API_HOST: ${API_HOST} 
+          API_SERVER_PORT: ${APP_SERVER_PORT}
         image: pauromeropau/awesome_server
         ports:
-            - "5000:5000"
+          - ${APP_SERVER_PORT}:${APP_SERVER_PORT}
         volumes:
-            - ./server:/usr/src/app
+          - ./server:/usr/src/app
         stdin_open: true

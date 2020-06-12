@@ -6,25 +6,17 @@ LABEL maintainer="Paula Romero pauromeropau@gmail.com"
 LABEL version="1.0"
 LABEL description="Guidesmiths test"
 
+# set working directory
 WORKDIR /server
 
+# install app dependencies
 COPY package*.json ./
 
 RUN npm install
 
+# add app
 COPY . .
 
 EXPOSE 5000
 
 CMD [ "npm", "start" ]
-
-# FROM node:lts-slim
-
-# RUN mkdir -p /usr/src/app
-
-# WORKDIR /usr/src/app
-
-# EXPOSE 5000
-
-# # You can change this
-# CMD [ "npm", "start" ]

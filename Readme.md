@@ -11,7 +11,7 @@ Itself, it's meaningless. I mean, just info. So I had the idea of creating a sma
 
 ### TECH STACK
 
-React/Redux, Hooks, Node, Express, Axios, Docker and Jest 
+React/Redux, Hooks, Node, Express, Axios, Docker and Jest
 
 ### UX/UI
 
@@ -79,16 +79,16 @@ PORT=5000
 - Render phone details when clicked
 - Responsive design
 - Display spinner while request
+- Add readme that explains how to run
+- Dockerize
 
 ### TO DO
 
-- Add readme that explains how to run
-- Dockerize
 - Write realistic unit/end-to-end tests
 
 #### Author
 
-👩🏼‍💻 Paula Romero Armas
-👤 [LinkedIn](https://www.linkedin.com/in/pauromeropau/)
-📩 pauromeropau@gmail.com
+👩🏼‍💻 Paula Romero Armas<br>
+👤 [LinkedIn](https://www.linkedin.com/in/pauromeropau/)<br>
+📩 pauromeropau@gmail.com<br>
 📍 Madrid, Spain.
