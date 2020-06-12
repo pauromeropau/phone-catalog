@@ -6,27 +6,20 @@ LABEL maintainer="Paula Romero pauromeropau@gmail.com"
 LABEL version="1.0"
 LABEL description="Guidesmiths test"
 
+# create directory
+RUN mkdir -p /srv/app/phone-server
+
 # set working directory
-# WORKDIR /server
-
-RUN mkdir -p /srv/app/phone-docker-server
-
-WORKDIR /srv/app/phone-docker-server
+WORKDIR /srv/app/phone-server
 
 # install app dependencies
-# COPY package*.json ./
-# COPY package.json /srv/app/server
-# COPY package-lock.json /srv/app/server
-
-COPY package.json /srv/app/phone-docker-server
-COPY package-lock.json /srv/app/phone-docker-server
+COPY package.json /srv/app/phone-server
+COPY package-lock.json /srv/app/phone-server
 
 RUN npm install
 
 # add app
-# COPY . .
-
-COPY . /srv/app/phone-docker-server
+COPY . /srv/app/phone-server
 
 # EXPOSE 5000
 

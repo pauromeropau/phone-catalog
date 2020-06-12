@@ -13,8 +13,8 @@ services:
         ports:
           - ${REACT_APP_PORT}:${REACT_APP_PORT}
         volumes:
-          - ./client/src:/srv/app/phone-docker-client/src
-          - ./client/public:/srv/app/phone-docker-client/public
+          - ./client/src:/srv/app/phone-client/src
+          - ./client/public:/srv/app/phone-client/public
         stdin_open: true
     server:
         container_name: server_side
@@ -30,5 +30,5 @@ services:
         ports:
           - ${APP_SERVER_PORT}:${APP_SERVER_PORT}
         volumes:
-          - ./server/routes:/srv/app/phone-docker-server
+          - ./server:/srv/app/phone-server/
         stdin_open: true
