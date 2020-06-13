@@ -11,7 +11,7 @@ const Phone = ({ phone }) => {
       <div className="phoneTitleContainer">
         <Link to={`/${phone.id}`} className="Link">
           <p className="phoneTitle">
-            Smartphone - {phone.manufacturer} {phone.name}, {phone.color},{" "}
+            Smartphone - {phone.manufacturer} {phone.name} {phone.color}{" "}
             {phone.processor}
           </p>
         </Link>
@@ -24,7 +24,7 @@ const Phone = ({ phone }) => {
         />
       </Link>
       <p className="phonePriceOld">£{oldPrice}</p>
-      <p className="phonePrice">£{phone.price}</p>
+      <h1 className="phonePrice">£{phone.price}</h1>
       <div className="phoneButtonsContainer">
         <Link to={`/${phone.id}`} className="Link">
           <button className="phoneButtonView">View more</button>
