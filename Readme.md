@@ -7,7 +7,7 @@
 This is part of the idea of creating a website with meaning, or some UX. It's provided a JSON file for doing this test.
 Itself, it's meaningless. I mean, just info. So I had the idea of creating a small boutique and not simply develope a website that renders a JSON file.
 
-### AÑADIR AQUI GIFs
+![The smartphone's boutique](https://media.giphy.com/media/ihRtUHPBAya1xaOLCT/giphy.gif)
 
 ### TECH STACK
 
@@ -69,22 +69,6 @@ API_HOST=http://localhost:3000
 ENV=development
 PORT=5000
 ```
-
-### DONE
-
-- Public repo
-- REST API: 1 endpoint, returns 'phones.json'
-- Fetch data with Redux and Axios (or similar)
-- Display initial list with all phones
-- Render phone details when clicked
-- Responsive design
-- Display spinner while request
-- Add readme that explains how to run
-- Dockerize
-
-### TO DO
-
-- Write realistic unit/end-to-end tests
 
 #### Author
 

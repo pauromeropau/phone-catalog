@@ -34,7 +34,7 @@ const Phones = ({ phones }) => {
 };
 
 const mapStateToProps = (state) => ({
-  phones: state.phones,
+  phones: state.phones
 });
 
 export default connect(mapStateToProps)(Phones);

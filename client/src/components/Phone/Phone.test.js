@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-// import sinon from "sinon";
+import React from "react";
 import Enzyme, { shallow } from "enzyme";
+
 // import renderer from "react-test-renderer";
 import Adapter from "enzyme-adapter-react-16";
 import Phone from "./Phone";
@@ -22,10 +22,8 @@ const phone = {
 };
 
 function shallowSetup() {
-  // Sample props to pass to our shallow render
   const props = { phone };
 
-  // wrapper instance around rendered output
   const enzymeWrapper = shallow(<Phone {...props} />);
 
   return {
@@ -34,7 +32,7 @@ function shallowSetup() {
   };
 }
 
-describe("Shallow rendered Phone", () => {
+describe("Shallow rendered phone", () => {
   const { enzymeWrapper, props } = shallowSetup();
 
   it("should render the correct phone name", () => {
