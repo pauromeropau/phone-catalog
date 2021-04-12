@@ -1,12 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
+::selection {
+  color: white;
+  background: #6c46a7;
+}
+
 .app {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   margin-top: 50px;
   padding: 2px;
   flex-direction: column;

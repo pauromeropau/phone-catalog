@@ -11,7 +11,7 @@ const Phones = ({ phones }) => {
     <div className="phones">
       {phones.length === 8 ? (
         <div>
-          <h1 className="phonesTitle">The smartphone's boutique</h1>
+          <h1 className="phonesTitle">The Soamee Shop</h1>
           <div className="phonesContainer">
             {phones.map((phone, i) => (
               <Phone key={i} phone={phone} />
