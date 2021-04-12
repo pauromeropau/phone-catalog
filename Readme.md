@@ -77,6 +77,6 @@ PORT=5000
 
 👩🏼‍💻 Paula Romero <br>
 👤 [LinkedIn](https://www.linkedin.com/in/pauromeropau/) <br>
-🎨 [Behance](https://www.behance.net/pauromeropau) <br>
-📩 pauromeropau@gmail.com <br>
+🎨  [Behance](https://www.behance.net/pauromeropau) <br>
+📩  pauromeropau@gmail.com <br>
 📍 Madrid, Spain <br>
