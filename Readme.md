@@ -7,8 +7,6 @@
 This is part of the idea of creating a website with meaning, or some UX. It's used a JSON file (which I use to own) for doing this test.
 Itself, it's meaningless. I mean, just info. So I had the idea of creating a small shop and not simply develope a website that renders a JSON file.
 
-![The Soamee Shop](https://media.giphy.com/media/ihRtUHPBAya1xaOLCT/giphy.gif)
-
 ### 👉🏻  [DEMO](https://soamee-phone-catalog.netlify.app/)
 
 ### TECH STACK
