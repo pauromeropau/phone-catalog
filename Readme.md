@@ -75,7 +75,8 @@ PORT=5000
 
 #### Author
 
-👩🏼‍💻 Paula Romero Armas<br>
-👤 [LinkedIn](https://www.linkedin.com/in/pauromeropau/)<br>
-📩 pauromeropau@gmail.com<br>
-📍 Madrid, Spain.
+👩🏼‍💻 Paula Romero <br>
+👤 [LinkedIn](https://www.linkedin.com/in/pauromeropau/) <br>
+🎨 [Behance](https://www.behance.net/pauromeropau) <br>
+📩 pauromeropau@gmail.com <br>
+📍 Madrid, Spain <br>
