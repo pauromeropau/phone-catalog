@@ -12,11 +12,9 @@ app.listen(PORT, () => {
 app.use(cors());
 
 app.get("/phones", (req, res) => {
-
   res.status(200).send({
     success: "true",
     message: "Data collected",
     data: phones,
   });
-  
 });
