@@ -9,7 +9,7 @@ const NavBar = () => {
     <nav className="navbar">
       <div className="navbarLogoContainer">
         <a className="navbarLogo" href="/">
-          The boutique
+          The Soamee Shop
         </a>
       </div>
       <ul className="navbarList">

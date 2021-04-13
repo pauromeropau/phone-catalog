@@ -23,8 +23,8 @@ const Phone = ({ phone }) => {
           src={`/images/${phone.imageFileName}`}
         />
       </Link>
-      <p className="phonePriceOld">£{oldPrice}</p>
-      <h1 className="phonePrice">£{phone.price}</h1>
+      <p className="phonePriceOld">{oldPrice}€</p>
+      <h1 className="phonePrice">{phone.price}€</h1>
       <div className="phoneButtonsContainer">
         <Link to={`/${phone.id}`} className="Link">
           <button className="phoneButtonView">View more</button>

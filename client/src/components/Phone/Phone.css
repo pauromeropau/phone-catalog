@@ -29,7 +29,7 @@
 }
 
 .phoneTitle:hover {
-  color: #5b8afd;
+  color: #6c46a7;
 }
 
 .phonePic {
@@ -81,8 +81,8 @@
 }
 
 .phoneButtonView:hover{
-  border: 1px solid #5b8afd;
-  color: #5b8afd;
+  border: 1px solid #6c46a7;
+  color: #6c46a7;
 }
 
 .phoneButtonBuy {
@@ -101,7 +101,7 @@
 }
 
 .phoneButtonBuy:hover {
-  background-color: #5b8afd;
+  background-color: #6c46a7;
 }
 
 .phoneButtonBuyIcon {
