@@ -6,7 +6,7 @@ LABEL maintainer="Paula Romero pauromeropau@gmail.com"
 LABEL version="1.0"
 LABEL description="Soamee test"
 
-# create directory
+# createdirectory
 RUN mkdir -p /srv/app/phone-client
 
 # set working directory
