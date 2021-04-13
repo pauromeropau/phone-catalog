@@ -30,9 +30,6 @@
   color: #4F4F4F;
 }
 
-.phoneDetailsA {
-}
-
 .phoneDetailsNameImg {
   max-width: 350px;
 }
@@ -160,7 +157,7 @@
 }
 
 .phoneDetailsBuy:hover {
-  background-color: #ff635c;
+  background-color: #6c46a7;
 }
 
 .phoneDetailsBuyIcon {

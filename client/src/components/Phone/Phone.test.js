@@ -32,7 +32,7 @@ function shallowSetup() {
 }
 
 describe("Shallow rendered phone", () => {
-  const { enzymeWrapper, props } = shallowSetup();
+  const { enzymeWrapper} = shallowSetup();
 
   it("should render the correct phone name", () => {
     expect(enzymeWrapper.find(".phoneTitleContainer").text()).toBe(
@@ -54,7 +54,7 @@ describe("Shallow rendered phone", () => {
   });
 
   it("should render the correct phone price", () => {
-    expect(enzymeWrapper.find(".phonePrice").text()).toBe("£" + phone.price);
+    expect(enzymeWrapper.find(".phonePrice").text()).toBe( phone.price + "€");
   });
 
   it("should render view more button", () => {

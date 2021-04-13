@@ -45,7 +45,7 @@ const PhoneDetails = () => {
           </div>
         </div>
         <div className="phoneDetailsPriceContainer">
-          <span className="phoneDetailsPrice">£{phone.price}</span>
+          <span className="phoneDetailsPrice">{phone.price}€</span>
         </div>
         <div className="phoneDetailsDesContainer">
           <span className="phoneDetailsDes">
@@ -83,7 +83,7 @@ const PhoneDetails = () => {
   ) : (
     <div className="LoadingDetails">
       <div className="LoadingDetailsTextContainer">
-        <h1 className="LoadingDetailsText">Preparings smartphone details...</h1>
+        <h1 className="LoadingDetailsText">Preparing smartphones details...</h1>
       </div>
       <div className="circles">
         <span className="circle c1"></span>
