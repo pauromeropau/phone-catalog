@@ -1,5 +1,7 @@
 ### 📱 ✨ The Soamee Shop (Phone Catalog) ✨ 📱
 
+(Read [TEST](/TEST.md))
+
 ### WHAT IS IT?
 
 "The Soamee Shop" is an online and sofisticated technology shop. Sofisticated because they just sell 8 smartphones.
