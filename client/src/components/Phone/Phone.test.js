@@ -32,7 +32,7 @@ function shallowSetup() {
 }
 
 describe("Shallow rendered phone", () => {
-  const { enzymeWrapper, props } = shallowSetup();
+  const { enzymeWrapper} = shallowSetup();
 
   it("should render the correct phone name", () => {
     expect(enzymeWrapper.find(".phoneTitleContainer").text()).toBe(
