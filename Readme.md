@@ -21,14 +21,7 @@ As mentioned before, this website has been given the appearance of an online sto
 Of course Soamee brand is present (#6c46a7, Lato and Poppins typos)
 
 ### HOW TO RUN
-
-```
-docker-compose up
-```
-
 #### Server side
-
-Run without Docker:
 
 ```
 cd server/
@@ -37,8 +30,6 @@ npm start
 ```
 
 #### Client side
-
-Run without Docker:
 
 ```
 cd client/
@@ -71,6 +62,11 @@ API_HOST=http://localhost:3000
 ```
 ENV=development
 PORT=5000
+```
+
+#### Docker
+```
+docker-compose up
 ```
 
 #### Author
