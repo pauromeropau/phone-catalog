@@ -5,6 +5,7 @@
   "dependencies": {
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "@types/testing-library__dom": "^7.5.0",
     "axios": "^0.21.1",
     "axios-mock-adapter": "^1.18.1",
     "react": "^16.13.1",

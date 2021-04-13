@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ef0a3ed1.chunk.css",
+    "main.js": "/static/js/main.a76535ba.chunk.js",
+    "main.js.map": "/static/js/main.a76535ba.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8e1e8328.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8e1e8328.js.map",
+    "static/js/2.1821c206.chunk.js": "/static/js/2.1821c206.chunk.js",
+    "static/js/2.1821c206.chunk.js.map": "/static/js/2.1821c206.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.ef0a3ed1.chunk.css.map": "/static/css/main.ef0a3ed1.chunk.css.map",
+    "static/js/2.1821c206.chunk.js.LICENSE.txt": "/static/js/2.1821c206.chunk.js.LICENSE.txt",
+    "static/media/NYT.ca3c3100.png": "/static/media/NYT.ca3c3100.png",
+    "static/media/cartBlack.df355f78.svg": "/static/media/cartBlack.df355f78.svg",
+    "static/media/cartWhite.cf568387.svg": "/static/media/cartWhite.cf568387.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8e1e8328.js",
+    "static/js/2.1821c206.chunk.js",
+    "static/css/main.ef0a3ed1.chunk.css",
+    "static/js/main.a76535ba.chunk.js"
+  ]
+}
